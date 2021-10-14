@@ -351,21 +351,24 @@
     <!-- Подвал -->
     <footer class="footer">
         <div class="container footer-container">
-            <div>
+            <div class="footer-address">
                 <p class="logo">Web<span class="text">Studio</span></p>
-                <address class="address">
+                <address>
                     <ul class="address-auth-nav">
                         <li class="address-row"> 
-                            <a class="link maps" href="https://www.google.com.ua/maps/place/%D0%B1%D1%83%D0%BB%D1%8C%D0%B2%D0%B0%D1%80+%D0%9B%D0%B5%D1%81%D1%96+%D0%A3%D0%BA%D1%80%D0%B0%D1%97%D0%BD%D0%BA%D0%B8,+26,+%D0%9A%D0%B8%D1%97%D0%B2,+02000/@50.4268936,30.5373685,18z"> г. Киев, пр-т Леси Украинки, 26 </a> </li>
+                            <a class="link maps" href="https://www.google.com.ua/maps/place/%D0%B1%D1%83%D0%BB%D1%8C%D0%B2%D0%B0%D1%80+%D0%9B%D0%B5%D1%81%D1%96+%D0%A3%D0%BA%D1%80%D0%B0%D1%97%D0%BD%D0%BA%D0%B8,+26,+%D0%9A%D0%B8%D1%97%D0%B2,+02000/@50.4268936,30.5373685,18z"> г. Киев, пр-т Леси Украинки, 26 </a> 
+                        </li>
                         <li class="address-row"> 
-                            <a class="link" href="mailto:info@devstudio.com"> info@devstudio.com </a> </li>
+                            <a class="link" href="mailto:info@devstudio.com"> info@devstudio.com </a> 
+                        </li>
                         <li class="address-row"> 
-                            <a class="link" href="tel:+380961111111"> +38 096 111-11-11 </a> </li>
+                            <a class="link" href="tel:+380961111111"> +38 096 111-11-11 </a> 
+                        </li>
                     </ul>
                 </address>  
             </div>
             <div class="footer-social">
-                <h3 class="footer-headline">присоединяйтесь</h3>
+                <h2 class="footer-headline">присоединяйтесь</h2>
                 <ul class="social-list">
                     <li class="social-item">
                         <a class="footer-social-link social-link link" href="">
@@ -398,14 +401,83 @@
                     </li>
                 </ul>
             </div>
+            <div>
+                <h2 class="footer-headline">Подпишитесь на рассылку</h2>
+                <form class="form-online">
+                    <input class="online-input" type="user-mail" name="user-mail" placeholder="E-mail">
+                    
+                    <button type="submit" class="hero-button online-btn">
+                        Подписаться
+                        <svg class="online-btn-icon">
+                            <use href="./images/sprite.svg#icon-send"></use>
+                        </svg>
+                    </button>
+        
+                </form>
+            </div>    
         </div>
     </footer>
-
+    <!-- modal icon -->
     <div class="backdrop is-hidden" data-modal>
         <div class="modal">
             <button type="button" class="close-btn" data-modal-close>
                 <svg class="close-btn-icon"> <use href="./images/sprite.svg#icon-close"></use> </svg>
             </button>
+            <!-- form -->
+            <p class="modal-title">Оставьте свои данные, мы вам перезвоним</p>
+            <form class="modal-form js-speaker-form">
+                <div class="modal-field">
+                    <label for="name">Имя</label>
+                    <input class="modal-input" 
+                    type="text" 
+                    name="name" 
+                    id="name" 
+                    placeholder="name">
+                    <svg class="modal-icon">
+                        <use href="./images/sprite.svg#icon-name"></use>
+                    </svg>
+                </div>
+                <div class="modal-field">
+                    <label  for="tel">Телефон</label>
+                    <input class="modal-input"
+                    type="tel" 
+                    name="tel" 
+                    id="tel" 
+                    placeholder="+380........">
+                    <svg class="modal-icon">
+                        <use href="./images/sprite.svg#icon-tel"></use>
+                    </svg>
+                </div>
+                <div class="modal-field">
+                    <label for="mail">Почта</label>
+                    <input class="modal-input"
+                    type="email" 
+                    name="mail" 
+                    id="mail"
+                    placeholder="email">
+                    <svg class="modal-icon">
+                        <use href="./images/sprite.svg#icon-mail"></use>
+                    </svg>
+                </div>
+                <div class="modal-comment">
+                    <label for="comment">Коментарий</label>
+                    <textarea class="textarea-comment"
+                    name="comment" 
+                    id="comment"
+                    placeholder="Введите текст"></textarea>
+                </div>
+                <div class="modal-checkbox">
+                    <input class="input-checkbox"
+                    type="checkbox" 
+                    name="text" 
+                    value="text" 
+                    id="text">
+                    <label for="text">Соглашаюсь с рассылкой и принимаю <span class="form-text">Условия договора</span></label>
+                </div>
+                <div class="modal-btn">
+                    <button class="hero-button" type="submit">Отправить</button>
+                </div>
+            </form>
         </div>
     </div>
     <script src="./js/modal.js"></script>
