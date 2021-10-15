@@ -251,7 +251,7 @@ img {
 
 /*---Заголовки h2 (Portfolio h1)---*/
 /* -Приховані заголовки- */
-.visual-hidden:not(:focus):not(:active) {
+.visual-hidden {
   position: absolute;
   width: 1px;
   height: 1px;
@@ -679,10 +679,8 @@ img {
 }
 /* ----form----- */
 .modal-form {
-  outline: 3px solid #28da72;
   margin-left: auto;
   margin-right: auto;
-  /* padding: 40px; */
 }
 .modal-title {
   font-weight: 700;
@@ -694,8 +692,6 @@ img {
 }
 .modal-field {
   position: relative;
-  /* display: flex;
-  flex-direction: column; */
   margin-bottom: 10px;
 }
 .modal-comment label,
@@ -744,7 +740,6 @@ img {
   display: flex;
   flex-direction: column;
   margin-bottom: 20px;
-  /* outline: 3px solid mediumblue; */
 }
 .textarea-comment {
   padding: 12px 16px;
@@ -760,9 +755,6 @@ img {
 }
 .modal-checkbox {
   margin-bottom: 30px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
 .input-checkbox {
   background: var(--title-text-color);
@@ -773,6 +765,7 @@ img {
   letter-spacing: 0.03em;
   color: var(--text-item-color);
   display: flex;
+  align-items: center;
 }
 .contour-checkbox {
   width: 16px;
@@ -781,22 +774,24 @@ img {
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
-  margin-right: 8px;
+  margin-right: 7px;
   display: flex;
   align-items: center;
+  justify-content: center;
 }
-.input-checkbox:checked + .contour-checkbox {
+.input-checkbox:checked + .label-checkbox span {
   background-color: var(--accent-color);
   border: none;
-  justify-items: center;
 }
 .check-icon {
   width: 11px;
   height: 8px;
+  /* margin: 4px 3px; */
 }
 .modal-text {
   color: var(--accent-color);
   text-decoration: underline;
+  padding-left: 4px;
 }
 /* --кнопка form-- */
 .modal-btn {
