@@ -695,8 +695,9 @@ img {
   position: relative;
   margin-bottom: 10px;
 }
-.modal-comment label,
-.modal-field label {
+
+.modal-field label,
+.modal-comment label {
   margin-bottom: 4px;
   font-size: 12px;
   line-height: 1.16;
@@ -713,6 +714,7 @@ img {
 .input-wrapper {
   display: block;
   position: relative;
+  margin-top: 4px;
 }
 .modal-input {
   margin: 0;
@@ -757,9 +759,6 @@ img {
 .textarea-comment:focus {
   border-color: var(--accent-color);
 }
-.modal-checkbox {
-  margin-bottom: 30px;
-}
 .input-checkbox {
   background-color: var(--title-text-color);
 }
@@ -790,7 +789,6 @@ img {
 .check-icon {
   width: 11px;
   height: 8px;
-  /* margin: 4px 3px; */
 }
 .modal-text {
   color: var(--accent-color);
@@ -799,9 +797,12 @@ img {
 }
 /* --кнопка form-- */
 .modal-btn {
+  margin-top: 30px;
   display: flex;
   justify-content: center;
-  margin: 0 auto;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: auto;
 }
 .modal-btn .hero-button {
   color: var(--primary-title-color);
