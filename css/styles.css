@@ -769,6 +769,7 @@ img {
   color: var(--text-item-color);
   display: flex;
   align-items: center;
+  cursor: pointer;
 }
 .contour-checkbox {
   width: 16px;
