@@ -759,6 +759,7 @@ img {
 .textarea-comment:focus {
   border-color: var(--accent-color);
 }
+/* --checkbox-- */
 .input-checkbox {
   background-color: var(--title-text-color);
 }
@@ -770,7 +771,9 @@ img {
   display: flex;
   align-items: center;
   cursor: pointer;
+  justify-content: center;
 }
+
 .contour-checkbox {
   width: 16px;
   height: 15px;
@@ -782,8 +785,11 @@ img {
   display: flex;
   align-items: center;
   justify-content: center;
+  transition: background-color var(--timing-duration) var(--timing-function);
 }
-.input-checkbox:checked + .label-checkbox span {
+
+.input-checkbox:checked + .label-checkbox span,
+.input-checkbox:hover + .label-checkbox span {
   background-color: var(--accent-color);
   border: none;
 }
