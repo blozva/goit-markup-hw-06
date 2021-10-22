@@ -33,11 +33,7 @@ ul {
   list-style: none;
 }
 /* прибираємо підкреслювання */
-.link-item,
-.link {
-  display: block;
-  text-decoration: none;
-}
+
 a {
   display: block;
   text-decoration: none;
